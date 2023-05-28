@@ -8,7 +8,7 @@
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
 body{
-  @apply p-10 font-["Poppins"] text-dark-teal w-screen overflow-hidden
+  @apply p-10 sm:p-16 font-["Poppins"] text-dark-teal w-screen overflow-hidden bg-pearl
 }
 
 #menuToggle > div {
