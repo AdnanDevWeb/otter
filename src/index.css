@@ -8,7 +8,7 @@
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
 body{
-  @apply p-10 sm:p-16 font-["Poppins"] text-dark-teal w-screen overflow-hidden bg-pearl
+  @apply p-10 sm:p-16 font-["Poppins"] text-dark-teal w-screen overflow-x-hidden bg-pearl
 }
 
 #menuToggle > div {
@@ -42,6 +42,18 @@ body{
 
 @layer components{
   .btn{
-    @apply px-6 py-2 text-lg bg-white rounded-full font-medium 
+    @apply px-6 py-2 text-base bg-white rounded-full font-semibold 
+  }
+  .hero-bg-columns{
+    @apply grid grid-rows-3 gap-1 w-[28%] h-full
   }
 }
+#clip-one{
+  clip-path: path('M0.891,0.24 C0.897,0.182,0.001,-0.151,0.001,0.087 C0.001,0.324,0.049,0.895,0.049,0.895 C0.049,0.895,0.645,1,0.891,0.895 C1,0.654,0.891,0.24,0.891,0.24');
+}
+
+
+.hero-bg-columns > div{
+  background-color: black;
+}
+
